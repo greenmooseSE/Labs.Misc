@@ -1,0 +1,87 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E8135F1-C2C3-40A8-B8B6-A27D9742E291}"
+    ProjectSection(SolutionItems) = preProject		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		.gitattributes = .gitattributes
+		Directory.build.props = Directory.build.props
+		MultipleExceptionHandlers.v3.ncrunchsolution = MultipleExceptionHandlers.v3.ncrunchsolution
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1069C180-ABF9-4C3E-A62C-E813BFD56D2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleExceptionHandlers.Common", "Src\MultipleExceptionHandlers.Common\MultipleExceptionHandlers.Common.csproj", "{B77A3913-9DF1-4109-B789-EE25C128C48C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleExceptionHandlers.WebApi", "Src\MultipleExceptionHandlers.WebApi\MultipleExceptionHandlers.WebApi.csproj", "{E51CA6D6-5644-4A64-990A-1FB82D225678}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{355D52DB-EEF0-4DC2-8737-F0194363AFF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8B2EB2A3-462F-42FC-A7A3-FD380F23D7BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleExceptionHandlers.HttpIntTests.Common", "Test\MultipleExceptionHandlers.HttpIntTests.Common\MultipleExceptionHandlers.HttpIntTests.Common.csproj", "{AB09559C-6F59-43A1-BC05-C45F47D5BBDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleExceptionHandlers.WebApi.HttpIntTests.Common", "Test\MultipleExceptionHandlers.WebApi.HttpIntTests.Common\MultipleExceptionHandlers.WebApi.HttpIntTests.Common.csproj", "{6C3A7EBD-53D5-4BFA-85FE-8A17A4B359F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleExceptionHandlers.WebApi.HttpIntTests", "Test\MultipleExceptionHandlers.WebApi.HttpIntTests\MultipleExceptionHandlers.WebApi.HttpIntTests.csproj", "{0848BE3C-FC1D-48F0-9110-C81B6B539666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleExceptionHandlers.Tests.Common", "Test\MultipleExceptionHandlers.Tests.Common\MultipleExceptionHandlers.Tests.Common.csproj", "{13A50B4C-8B5A-4A36-BB18-33CCB5B7FEE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleExceptionHandlers.Tests.Common.UnitTests", "Test\MultipleExceptionHandlers.Tests.Common.UnitTests\MultipleExceptionHandlers.Tests.Common.UnitTests.csproj", "{F3A0E892-4D49-45EE-8E3A-111971ED3B49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B77A3913-9DF1-4109-B789-EE25C128C48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B77A3913-9DF1-4109-B789-EE25C128C48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B77A3913-9DF1-4109-B789-EE25C128C48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B77A3913-9DF1-4109-B789-EE25C128C48C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E51CA6D6-5644-4A64-990A-1FB82D225678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51CA6D6-5644-4A64-990A-1FB82D225678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51CA6D6-5644-4A64-990A-1FB82D225678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51CA6D6-5644-4A64-990A-1FB82D225678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB09559C-6F59-43A1-BC05-C45F47D5BBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB09559C-6F59-43A1-BC05-C45F47D5BBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB09559C-6F59-43A1-BC05-C45F47D5BBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB09559C-6F59-43A1-BC05-C45F47D5BBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C3A7EBD-53D5-4BFA-85FE-8A17A4B359F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C3A7EBD-53D5-4BFA-85FE-8A17A4B359F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C3A7EBD-53D5-4BFA-85FE-8A17A4B359F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C3A7EBD-53D5-4BFA-85FE-8A17A4B359F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0848BE3C-FC1D-48F0-9110-C81B6B539666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0848BE3C-FC1D-48F0-9110-C81B6B539666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0848BE3C-FC1D-48F0-9110-C81B6B539666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0848BE3C-FC1D-48F0-9110-C81B6B539666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A50B4C-8B5A-4A36-BB18-33CCB5B7FEE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A50B4C-8B5A-4A36-BB18-33CCB5B7FEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A50B4C-8B5A-4A36-BB18-33CCB5B7FEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A50B4C-8B5A-4A36-BB18-33CCB5B7FEE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A0E892-4D49-45EE-8E3A-111971ED3B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A0E892-4D49-45EE-8E3A-111971ED3B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A0E892-4D49-45EE-8E3A-111971ED3B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A0E892-4D49-45EE-8E3A-111971ED3B49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B77A3913-9DF1-4109-B789-EE25C128C48C} = {1069C180-ABF9-4C3E-A62C-E813BFD56D2F}
+		{E51CA6D6-5644-4A64-990A-1FB82D225678} = {1069C180-ABF9-4C3E-A62C-E813BFD56D2F}
+		{8B2EB2A3-462F-42FC-A7A3-FD380F23D7BB} = {355D52DB-EEF0-4DC2-8737-F0194363AFF5}
+		{AB09559C-6F59-43A1-BC05-C45F47D5BBDA} = {8B2EB2A3-462F-42FC-A7A3-FD380F23D7BB}
+		{6C3A7EBD-53D5-4BFA-85FE-8A17A4B359F3} = {8B2EB2A3-462F-42FC-A7A3-FD380F23D7BB}
+		{0848BE3C-FC1D-48F0-9110-C81B6B539666} = {355D52DB-EEF0-4DC2-8737-F0194363AFF5}
+		{13A50B4C-8B5A-4A36-BB18-33CCB5B7FEE2} = {8B2EB2A3-462F-42FC-A7A3-FD380F23D7BB}
+		{F3A0E892-4D49-45EE-8E3A-111971ED3B49} = {8B2EB2A3-462F-42FC-A7A3-FD380F23D7BB}
+	EndGlobalSection
+EndGlobal
+
+
+
+
+
+

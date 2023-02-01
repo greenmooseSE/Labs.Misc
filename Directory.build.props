@@ -1,0 +1,19 @@
+
+    <Project>
+        <PropertyGroup>
+            <TargetFramework>net6.0</TargetFramework>
+            <Nullable>enable</Nullable>
+            <ImplicitUsings>enable</ImplicitUsings>
+            <LangVersion>latest</LangVersion>
+            
+        </PropertyGroup>
+
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+            <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+        </PropertyGroup>
+
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+            <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+        </PropertyGroup>
+    </Project>
+    

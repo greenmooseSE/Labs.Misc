@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MultipleExceptionHandlers.HttpIntTests.Common\MultipleExceptionHandlers.HttpIntTests.Common.csproj" />
+    <ProjectReference Include="..\..\Src\MultipleExceptionHandlers.WebApi\MultipleExceptionHandlers.WebApi.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
