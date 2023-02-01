@@ -1,11 +1,19 @@
+using MultipleExceptionHandlers.WebApi.ExceptionHandlers;
+using MultipleExceptionHandlers.WebApi.Exceptions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(opt =>
+{
+    opt.Filters.Add<ItemNotFoundExceptionFilterAttribute>();
+    opt.Filters.Add<SecretDataExceptionFilterAttribute>();
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 var app = builder.Build();
 
@@ -16,10 +24,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+    
 
 app.Run();
+
+// Make Program testable
+public partial class Program { }
